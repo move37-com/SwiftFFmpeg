@@ -345,4 +345,8 @@ extension AVPacketSideDataType {
     /// Active Format Description data consisting of a single byte as specified
     /// in ETSI TS 101 154 using AVActiveFormatDescription enum.
     public static let afd = AV_PKT_DATA_AFD
+
+    /// ICC profile data consisting of an opaque octet buffer following the
+    /// format described by ISO 15076-1.
+    public static let iccProfile = AV_PKT_DATA_ICC_PROFILE
 }
