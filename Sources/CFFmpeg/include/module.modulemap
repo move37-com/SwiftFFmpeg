@@ -1,4 +1,4 @@
-module CFFmpeg [system] {
+module CFFmpeg {
     module AVUtil {
         header "avutil_shim.h"
         link "avutil"

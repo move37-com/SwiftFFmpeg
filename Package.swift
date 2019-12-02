@@ -12,9 +12,9 @@ let package = Package(
         )
     ],
     targets: [
-        .systemLibrary(
+        .target(
             name: "CFFmpeg",
-            pkgConfig: "libavformat"
+            dependencies: []
         ),
         .target(
             name: "SwiftFFmpeg",
