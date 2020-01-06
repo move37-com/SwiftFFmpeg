@@ -16,7 +16,7 @@ let package = Package(
             name: "CFFmpeg",
             dependencies: [],
             linkerSettings: [
-                LinkerSetting.unsafeFlags(["-L./Sources/CFFmpeg/lib"])
+                LinkerSetting.unsafeFlags(["-Llibs/ffmpeg"])
             ]
         ),
         .target(
