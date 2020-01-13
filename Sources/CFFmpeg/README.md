@@ -12,7 +12,7 @@ See the following:
 git clone https://github.com/move37-com/FFmpeg
 cd FFmpeg
 
-./configure --disable-shared --enable-static --enable-version3 --disable-postproc --disable-doc --disable-debug --disable-network --disable-programs --disable-autodetect --disable-protocols --disable-indevs --disable-outdevs --disable-parsers --disable-filters --disable-bsfs --disable-encoders --disable-decoders --disable-muxers --disable-demuxers --enable-protocol=file --enable-muxer=mov --enable-parser=h264 --enable-decoder=h264 --enable-bsf=extract_extradata 
+./configure --disable-shared --enable-static --enable-version3 --disable-postproc --disable-doc --disable-debug --disable-network --disable-programs --disable-autodetect --disable-protocols --disable-indevs --disable-outdevs --disable-parsers --disable-filters --disable-bsfs --disable-encoders --disable-decoders --disable-muxers --disable-demuxers --enable-protocol=file --enable-muxer=mov --enable-parser=h264 --enable-decoder=hevc --enable-parser=hevc --enable-decoder=h264 --enable-bsf=extract_extradata 
 make -j3
 
 cp libavcodec/avcodec.h ../SwiftFFmpeg/Sources/CFFmpeg/include/libavcodec/
@@ -63,13 +63,13 @@ cp libswresample/version.h ../SwiftFFmpeg/Sources/CFFmpeg/include/libswresample/
 cp libswscale/swscale.h ../SwiftFFmpeg/Sources/CFFmpeg/include/libswscale/
 cp libswscale/version.h ../SwiftFFmpeg/Sources/CFFmpeg/include/libswscale/
 
-cp libavcodec/libavcodec.a ../SwiftFFmpeg/Sources/CFFmpeg/lib/
-cp libavdevice/libavdevice.a ../SwiftFFmpeg/Sources/CFFmpeg/lib/
-cp libavfilter/libavfilter.a ../SwiftFFmpeg/Sources/CFFmpeg/lib/
-cp libavformat/libavformat.a ../SwiftFFmpeg/Sources/CFFmpeg/lib/
-cp libavutil/libavutil.a ../SwiftFFmpeg/Sources/CFFmpeg/lib/
-cp libswresample/libswresample.a ../SwiftFFmpeg/Sources/CFFmpeg/lib/
-cp libswscale/libswscale.a ../SwiftFFmpeg/Sources/CFFmpeg/lib/
+cp libavcodec/libavcodec.a ../SwiftFFmpeg/libs/ffmpeg/
+cp libavdevice/libavdevice.a ../SwiftFFmpeg/libs/ffmpeg/
+cp libavfilter/libavfilter.a ../SwiftFFmpeg/libs/ffmpeg/
+cp libavformat/libavformat.a ../SwiftFFmpeg/libs/ffmpeg/
+cp libavutil/libavutil.a ../SwiftFFmpeg/libs/ffmpeg/
+cp libswresample/libswresample.a ../SwiftFFmpeg/libs/ffmpeg/
+cp libswscale/libswscale.a ../SwiftFFmpeg/libs/ffmpeg/
 ```
 
 Ignore warnings when building this package of the form:
