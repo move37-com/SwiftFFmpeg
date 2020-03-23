@@ -8,7 +8,6 @@ let package = Package(
     products: [
         .library(
             name: "SwiftFFmpeg",
-            type: .dynamic,
             targets: ["SwiftFFmpeg"]
         )
     ],
