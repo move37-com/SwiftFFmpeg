@@ -640,14 +640,6 @@ extension AVFormatContext {
     public func writeTrailer() throws {
         try throwIfFail(av_write_trailer(cContextPtr))
     }
-
-    /// Avoid negative timestamps during muxing.
-    /// Any value from `AVFormatContext.avoidNegativeTimestamp*`
-    /// Note, this only works when using `AVFormatContext.interleavedWriteFrame(_:)`.
-    public var avoidNegativeTimestamp: Int32 {
-        get { cContextPtr.pointee.avoid_negative_ts }
-        set { cContextPtr.pointee.avoid_negative_ts = newValue }
-    }
 }
 
 extension AVFormatContext: AVClassSupport, AVOptionSupport {
@@ -658,16 +650,4 @@ extension AVFormatContext: AVClassSupport, AVOptionSupport {
     ) rethrows -> T {
         try body(cContextPtr)
     }
-}
-
-// MARK: - AVFormatContext.avoidNegativeTimestamp
-
-extension AVFormatContext {
-
-    /// Enabled when required by target format
-    public static let avoidNegativeTimestampAuto = AVFMT_AVOID_NEG_TS_AUTO
-    /// Shift timestamps so they are non negative
-    public static let avoidNegativeTimestampNonNegative = AVFMT_AVOID_NEG_TS_MAKE_NON_NEGATIVE
-    /// Shift timestamps so that they start at 0
-    public static let avoidNegativeTimestampZero = AVFMT_AVOID_NEG_TS_MAKE_ZERO
 }
