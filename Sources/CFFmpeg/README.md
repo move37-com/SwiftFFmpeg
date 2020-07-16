@@ -12,7 +12,7 @@ See the following:
 git clone https://github.com/move37-com/FFmpeg
 cd FFmpeg
 
-./configure --disable-shared --enable-static --enable-version3 --disable-postproc --disable-doc --disable-debug --disable-network --disable-programs --disable-autodetect --disable-protocols --disable-indevs --disable-outdevs --disable-parsers --disable-filters --disable-bsfs --disable-encoders --disable-decoders --disable-muxers --disable-demuxers --enable-protocol=file --enable-muxer=mov --enable-parser=h264 --enable-decoder=hevc --enable-parser=hevc --enable-decoder=h264 --enable-bsf=extract_extradata --extra-cflags="-fno-stack-check"
+./configure --disable-shared --enable-static --disable-postproc --disable-doc --disable-debug --disable-network --disable-programs --disable-autodetect --disable-protocols --disable-indevs --disable-outdevs --disable-parsers --disable-filters --disable-bsfs --disable-encoders --disable-decoders --disable-muxers --disable-demuxers --enable-protocol=file --enable-muxer=mov --enable-parser=h264 --enable-decoder=hevc --enable-parser=hevc --enable-decoder=h264 --enable-bsf=extract_extradata --extra-cflags="-fno-stack-check"
 make -j3
 
 cp libavcodec/avcodec.h ../SwiftFFmpeg/Sources/CFFmpeg/include/libavcodec/
