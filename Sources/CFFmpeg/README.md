@@ -80,7 +80,9 @@ These need a fix in the assembler used for FFmpeg:
 
 https://github.com/yasm/yasm/issues/141
 
-= Some Updates:
+# TODO for Xcode12 
+
 We should build this as a FrameWork with shared-libraries see
+
 * https://github.com/videovillage/FFmpeg/blob/build-for-screen/build-for-screen/build-for-screen
 * https://github.com/sunlubo/SwiftFFmpeg/pull/41
