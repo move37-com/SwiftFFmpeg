@@ -46,48 +46,48 @@ let package = Package(
     ),
     .binaryTarget(
       name: "libavcodec",
-      url: "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavcodec.zip?raw=true",
-      checksum: "fd7134a138765bc9c80cc991e032a0229512c5bf0a18c151a9dcec4afa4fad0b"
+      url: "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libavcodec.zip?raw=true",
+      checksum: "18de8a06cb8e6ec35a387cba074618e911314c13264edbd65e01042add6218af"
     ),
     .binaryTarget(
       name: "libavdevice",
       url:
-        "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavdevice.zip?raw=true",
-      checksum: "91787692e329cdf60a80d96a42022bc9bd94b42e5c0ba79537313132886e9091"
+        "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libavdevice.zip?raw=true",
+      checksum: "2af42e4df49fb3ca4bf89304371f21dc615b114eea8603180f77191f39806c66"
     ),
     .binaryTarget(
       name: "libavfilter",
       url:
-        "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavfilter.zip?raw=true",
-      checksum: "8f87a588508ca40990905e0a6ce904ddc850ab2bc1069802f01e78a87fda8867"
+        "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libavfilter.zip?raw=true",
+      checksum: "701a05b1a70c17403656767eff4430c2f803d7328f949b37f932dcb04f6184d6"
     ),
     .binaryTarget(
       name: "libavformat",
       url:
-        "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavformat.zip?raw=true",
-      checksum: "d22e1ebb8c4f1ffc4975c9f3effabea6cde30ebd74dcd8fd1f55fca33d25c0b6"
+        "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libavformat.zip?raw=true",
+      checksum: "74ac041f470efc47513c3c2ac09d81206ef2de387670552031ec741ab983260a"
     ),
     .binaryTarget(
       name: "libavutil",
-      url: "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libavutil.zip?raw=true",
-      checksum: "46e9c2d1e78272ae349081c8a3f49a357224ef789a9fd954e4e6d3e662eeffd1"
+      url: "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libavutil.zip?raw=true",
+      checksum: "f334e32212556930ece1398dcda06765e2b65c28ef2335152731e4e01d6a53f3"
     ),
     .binaryTarget(
       name: "libpostproc",
       url:
-        "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libpostproc.zip?raw=true",
-      checksum: "e1d3c5f4bef331a3bb0b57762b833faff851917733f42edbf25497983de037a9"
+        "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libpostproc.zip?raw=true",
+      checksum: "5a3040da26ebc933124e95658ac86a8d84bb372c6682274c1f01f9a097bd0db0"
     ),
     .binaryTarget(
       name: "libswresample",
       url:
-        "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libswresample.zip?raw=true",
-      checksum: "b22f6e1754766dc9691755a9c17a800f63eb7299cba7649091bb26ad982b0c8c"
+        "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libswresample.zip?raw=true",
+      checksum: "d3662131f0270b512d370a8da93b173c00dc69632a8f0ed98dcb4d61fe11f3f7"
     ),
     .binaryTarget(
       name: "libswscale",
-      url: "https://github.com/sunlubo/SwiftFFmpeg/blob/master/xcframework/libswscale.zip?raw=true",
-      checksum: "a6b9201886e8aab5022b557cf0da2d8c5b1f085355d63f15665c4f48e9667a7b"
+      url: "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libswscale.zip?raw=true",
+      checksum: "69b2f524a8587111c5a9aa9e0ce0baa7ddf55973b4b3f5a4e15bec846d7094b5"
     ),
     .target(
       name: "SwiftFFmpegExamples",
