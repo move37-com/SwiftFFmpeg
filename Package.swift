@@ -25,7 +25,6 @@ let package = Package(
         "libavfilter",
         "libavformat",
         "libavutil",
-        "libpostproc",
         "libswresample",
         "libswscale",
       ],
@@ -71,12 +70,6 @@ let package = Package(
       name: "libavutil",
       url: "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libavutil.zip?raw=true",
       checksum: "f334e32212556930ece1398dcda06765e2b65c28ef2335152731e4e01d6a53f3"
-    ),
-    .binaryTarget(
-      name: "libpostproc",
-      url:
-        "https://github.com/move37-com/SwiftFFmpeg/blob/xcode12/xcframework/libpostproc.zip?raw=true",
-      checksum: "5a3040da26ebc933124e95658ac86a8d84bb372c6682274c1f01f9a097bd0db0"
     ),
     .binaryTarget(
       name: "libswresample",
