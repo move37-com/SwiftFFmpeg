@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FFMPEG_VERSION=4.3.1
+FFMPEG_VERSION=4.3-dev-m37
 FFMPEG_SOURCE_DIR=FFmpeg-n$FFMPEG_VERSION
 FFMPEG_LIBS="libavcodec libavdevice libavfilter libavformat libavutil libswresample libswscale"
 PREFIX=`pwd`/output
@@ -8,7 +8,7 @@ ARCH="x86_64"
 
 if [ ! -d $FFMPEG_SOURCE_DIR ]; then
   echo "Start downloading FFmpeg..."
-  curl -LJO https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/n$FFMPEG_VERSION || exit 1
+  curl -LJO https://codeload.github.com/move37-com/FFmpeg/tar.gz/n$FFMPEG_VERSION || exit 1
   tar -zxvf FFmpeg-n$FFMPEG_VERSION.tar.gz || exit 1
   rm -f FFmpeg-n$FFMPEG_VERSION.tar.gz
 fi
@@ -20,7 +20,29 @@ cd $FFMPEG_SOURCE_DIR
 
 ./configure \
   --prefix=$PREFIX \
-  --enable-version3 \
+  --disable-x86asm \
+  --disable-shared \
+  --enable-static \
+  --disable-postproc \
+  --disable-network \
+  --disable-autodetect \
+  --disable-protocols \
+  --disable-indevs \
+  --disable-outdevs \
+  --disable-parsers \
+  --disable-filters \
+  --disable-bsfs \
+  --disable-encoders \
+  --disable-decoders \
+  --disable-muxers \
+  --disable-demuxers \
+  --enable-protocol=file \
+  --enable-muxer=mov \
+  --enable-parser=h264 \
+  --enable-parser=hevc \
+  --enable-decoder=hevc \
+  --enable-decoder=h264 \
+  --enable-bsf=extract_extradata \
   --disable-programs \
   --disable-doc \
   --arch=$ARCH \
