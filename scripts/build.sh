@@ -38,6 +38,7 @@ cd $FFMPEG_SOURCE_DIR
   --disable-demuxers \
   --enable-protocol=file \
   --enable-muxer=mov \
+  --enable-demuxer=mov \
   --enable-parser=h264 \
   --enable-parser=hevc \
   --enable-decoder=hevc \
