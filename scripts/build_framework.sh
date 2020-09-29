@@ -54,7 +54,8 @@ rm -rf $LIB_XCFRAMEWORK
 # error: unable to find any specific architecture information in the binary at xxx
 
 mkdir -p $LIB_XCFRAMEWORK/macos-x86_64
-cp -R $LIB_FRAMEWORK $LIB_XCFRAMEWORK/macos-x86_64
+cp $PREFIX/lib/$LIB_NAME.a $LIB_XCFRAMEWORK/macos-x86_64/$LIB_NAME
+cp -R $PREFIX/include/$LIB_NAME/ $LIB_XCFRAMEWORK/macos-x86_64/Headers
 
 cat > $LIB_XCFRAMEWORK/Info.plist << EOF
 <?xml version="1.0" encoding="UTF-8"?>
@@ -64,10 +65,12 @@ cat > $LIB_XCFRAMEWORK/Info.plist << EOF
 	<key>AvailableLibraries</key>
 	<array>
 		<dict>
+			<key>HeadersPath</key>
+			<string>Headers</string>
 			<key>LibraryIdentifier</key>
 			<string>macos-x86_64</string>
 			<key>LibraryPath</key>
-			<string>$LIB_NAME.framework</string>
+			<string>$LIB_NAME.a</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>x86_64</string>
