@@ -31,31 +31,38 @@ let package = Package(
     ),
     .binaryTarget(
       name: "libavcodec",
-      path: "xcframework/libavcodec.xcframework"
+      url: "https://raw.githubusercontent.com/move37-com/SwiftFFmpeg/sidedataicc-xcode12-thies/xcframework/libavcodec.xcframework.zip",
+      checksum: "0970be267ddb98fa8dac4d673c71079c050749b06bb82b02a5a080961d4658de"
     ),
     .binaryTarget(
       name: "libavdevice",
-      path: "xcframework/libavdevice.xcframework"
+      url: "https://raw.githubusercontent.com/move37-com/SwiftFFmpeg/sidedataicc-xcode12-thies/xcframework/libavdevice.xcframework.zip",
+      checksum: "fb46aa3042140e5897e2589a5f2af56c1e021df18dd771b3a0d6768deb200478"
     ),
     .binaryTarget(
       name: "libavfilter",
-      path: "xcframework/libavfilter.xcframework"
+      url: "https://raw.githubusercontent.com/move37-com/SwiftFFmpeg/sidedataicc-xcode12-thies/xcframework/libavfilter.xcframework.zip",
+      checksum: "6ae6e302dfa3a4d5d17bf9ab5b239fc2289593ddcafa33523866eddc414ff5ca"
     ),
     .binaryTarget(
       name: "libavformat",
-      path: "xcframework/libavformat.xcframework"
+      url: "https://raw.githubusercontent.com/move37-com/SwiftFFmpeg/sidedataicc-xcode12-thies/xcframework/libavformat.xcframework.zip",
+      checksum: "0e987fcb7f9e3ac9964f5110b3f5d347f251da8d8c3c71e43f5539217e3eee93"
     ),
     .binaryTarget(
       name: "libavutil",
-      path: "xcframework/libavutil.xcframework"
+      url: "https://raw.githubusercontent.com/move37-com/SwiftFFmpeg/sidedataicc-xcode12-thies/xcframework/libavutil.xcframework.zip",
+      checksum: "cec6fe1b87a741de0c1abf21033d84fbef34f149ddf3e5b4e1b805c055ec82e9"
     ),
     .binaryTarget(
       name: "libswresample",
-      path: "xcframework/libswresample.xcframework"
+      url: "https://raw.githubusercontent.com/move37-com/SwiftFFmpeg/sidedataicc-xcode12-thies/xcframework/libswresample.xcframework.zip",
+      checksum: "c2eeacfd47db13424185add3c0c49cf6fb5343c2d68827a0bffce59a3e988d21"
     ),
     .binaryTarget(
       name: "libswscale",
-      path: "xcframework/libswscale.xcframework"
+      url: "https://raw.githubusercontent.com/move37-com/SwiftFFmpeg/sidedataicc-xcode12-thies/xcframework/libswscale.xcframework.zip",
+      checksum: "115b8849734fbb2d789d3015dabf1132aa91aa8c917f36aa163d00c66c1e6ca0"
     ),
     .target(
       name: "SwiftFFmpegExamples",
